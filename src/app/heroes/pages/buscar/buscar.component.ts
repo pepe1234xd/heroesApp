@@ -15,7 +15,7 @@ export class BuscarComponent {
 
   heroeSeleccionado!:Heroe | undefined;
 
-  constructor(private heroesService:HeroesService){}
+  constructor(private heroesService:HeroesService ){}
 
   buscando(){
     this.heroesService.getSugerencias(this.termino.trim()).subscribe(heroes=> this.heroes= heroes);
